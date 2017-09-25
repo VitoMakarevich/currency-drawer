@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import { Link } from 'react-router';
 import Divider from 'material-ui/Divider';
@@ -18,10 +17,8 @@ const styles = theme => ({
 });
 
 function SimpleList(props) {
-  const classes = props.classes;
-  console.log(Link)
   return (
-    <div className={classes.root}>
+    <div>
       <List>
         <Link to='drawer'>
         <ListItem button>
@@ -45,8 +42,5 @@ function SimpleList(props) {
   );
 }
 
-SimpleList.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
-export default withStyles(styles)(SimpleList);
+export default SimpleList;

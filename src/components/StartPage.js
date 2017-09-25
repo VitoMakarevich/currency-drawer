@@ -1,38 +1,38 @@
 import React from 'react';
 import { withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';;
+import RaisedButton from 'material-ui/RaisedButton';
 import { Link } from 'react-router';
 import Chart from '../images/chart.png';
 
-const styles = theme => ({
+const styles = {
     root: {
         display: '-webkit-flex', 
         display: 'flex',
         height: '100%',
         width: '100%',
-        'justify-content': 'center',
-        'align-items': 'center',
-        'flex-direction': 'column'
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
     },
     button: {
       },
     imageContainer:{
-        'flex-basis': '60%',
-        'margin-top': '1rem',
-        'margin-bottom': '2rem',
+        flexBasis: '60%',
+        marginTop: '1rem',
+        marginBottom: '2rem',
         display: 'flex',
-        'align-items': 'center',
-        'justify-content': 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     image: {
         height: '15rem',
         width: 'auto',
     },
     textContainer: {
-        'margin-bottom': '1rem',
-        'flex-basis': '30%',
+        marginBottom: '1rem',
+        flexBasis: '30%',
     }
-});
+};
   
 
 class StartPage extends React.Component {
@@ -43,17 +43,15 @@ class StartPage extends React.Component {
     
     render(){
 
-        const classes = this.props.classes;
-
         return (
-            <div className = {classes.root}>
-                    <div className = {classes.imageContainer}>
-                        <img src={Chart} className = {classes.image}/>
+            <div style= {styles.root}>
+                    <div style = {styles.imageContainer}>
+                        <img src={Chart} style = {styles.image}/>
                     </div>
-                    <div className = {classes.textContainer}>
-                        <Button class={classes.button} raised component={Link} to="drawer">
+                    <div style = {styles.textContainer}>
+                        <RaisedButton style={styles.button} onTouchTap={<Link to="drawer" />}>
                             Show currencies dynamics
-                        </Button>
+                        </RaisedButton>
                     </div>   
             </div>
         );
@@ -61,4 +59,4 @@ class StartPage extends React.Component {
 
 }
 
-export default withStyles(styles)(StartPage);
+export default StartPage;

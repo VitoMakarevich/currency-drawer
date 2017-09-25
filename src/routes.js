@@ -7,7 +7,7 @@ import Calculator from './components/Calculator';
 import StartPage from './components/StartPage';
 
 export default (
-    <Route path = "/" component = {MiniDrawer}>
+    <Route path = "/" component = {App}>
         <IndexRoute component = {StartPage}/>
         <Route path = "calculator" component = {Calculator} />
         <Route path = "drawer" component = {Drawer} />

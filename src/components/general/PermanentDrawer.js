@@ -54,7 +54,6 @@ const styles = theme => ({
 
 
 function PermanentDrawer(props) {
-  const { classes } = props;
   return (
     <div className={classes.root}>
       <div className={classes.appFrame}>
