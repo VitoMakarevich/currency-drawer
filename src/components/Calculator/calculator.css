@@ -1,0 +1,21 @@
+.calculator{
+    font-family: "Arial, sans-serif";
+    font-size: 15px;
+    color: #000;
+}
+.form-group > * {
+    margin:5px 3px;
+ }
+.form-group{
+     width: 100%;
+ }
+ .form-inline .form-group label,
+ .form-inline .form-group input,
+ .form-inline .form-group select {
+     margin: 0 3px;
+ }
+
+ .form-control:focus {
+    border-color: #000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  }

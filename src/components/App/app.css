@@ -1,0 +1,38 @@
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+    color: #fff;
+    font-family: 'Allan';font-size: 22px;
+}
+.page-header {
+    text-align: center;
+    margin: 0;
+    background-color: #222
+}
+
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+#app{
+    height: 100%;
+}
+.main{
+    height: 100%;
+}
+main{
+    height: 100%;   
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+
